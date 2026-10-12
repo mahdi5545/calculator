@@ -193,6 +193,7 @@ class _CalculatorAppState
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: backgroundGrey,
         body: SafeArea(
           child: Column(
             children: [
