@@ -156,12 +156,10 @@ class _CalculatorAppState
               if (inputUser == '') {
                 return;
               }
-              Parser parser = Parser();
-              Expression expression = parser
-                  .parse(inputUser);
-              ContextModel contextModel =
-                  ContextModel();
-              double eval = expression.evaluate(
+              final parser = GrammarParser();
+              final expression = parser.parse(inputUser);
+              final contextModel = ContextModel();
+              final eval = expression.evaluate(
                 EvaluationType.REAL,
                 contextModel,
               );
